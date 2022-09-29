@@ -100,10 +100,10 @@ def get_hifi_mels(train_wav_dir,out_dir,config):
         pickle.dump(mel_label_map, handle)
 
 if __name__ == '__main__':
-    out_dir = r""
     # require 22050Hz
     train_wav_dir = r"VCTK-Corpus/wav22050/"
     config_path = r"MaskVC/hifi_config.yaml"
+    out_dir = r""
     with open(config_path) as f:
         config = yaml.load(f, Loader=yaml.Loader)
     get_hifi_mels(train_wav_dir,out_dir,config)

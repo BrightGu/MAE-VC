@@ -76,6 +76,7 @@ if __name__ == '__main__':
 	resume_path = "MaskVC/pretrained/base_6c_16b_36_FSC_50.pt"
 	solver = Solver(config,resume_path)
 
+	## require 22050Hz
 	src_file = r"p364_237.wav"
 	tar_file = r"p241_352.wav"
 	out_dir = ""
