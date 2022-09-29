@@ -5,7 +5,7 @@ from torch.backends import cudnn
 import numpy as np
 import yaml
 from torch.utils.data import DataLoader
-from MaskVC.modules.Base.base_4c_16b_36_FSC_50 import _70 import MagicModel
+from MaskVC.modules.Base.base_4c_16b_36_FSC_50 import MagicModel
 from MaskVC  import util
 from MaskVC.infer.meldataset_infer import Test_MelDataset,mel_denormalize
 from hifivoice.inference_e2e import  hifi_infer
