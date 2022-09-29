@@ -1,0 +1,44 @@
+
+#########################   file  ####################
+# train corpus, from MaskVC/predata/robust_mels.py
+label_clip_mel_pkl: "figure_label_mel_map.pkl"
+# used for model evaluation during training. test_dir/*.wav, require 22050hz
+test_wav_dir: "test_dir"
+# model,log,test output
+out_dir: ""
+
+#########################   train  ####################
+local_rank: 3
+total_steps: 400000
+schedule_steps: 400000
+warmup_steps: 1000
+
+# 10 speakers and each with 10 utterances
+batch_size: 10
+utters_num: 10
+
+save_steps: 20000
+eval_steps: 20000
+weight_decay: 0.00015
+log_steps: 100
+learning_rate: 0.0001
+learning_rate_min: 0.000005
+adam_b1: 0.8
+adam_b2: 0.99
+lr_decay: 0.995
+
+resume: False
+resume_num: 0
+
+########################################## mel feature ##########################
+num_mels: 256
+num_freq: 1025
+n_fft: 1024
+hop_size: 256
+win_size: 1024
+sampling_rate: 22050
+fmin: 0
+fmax: 8000
+num_workers: 1
+
+
