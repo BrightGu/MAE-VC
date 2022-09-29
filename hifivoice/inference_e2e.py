@@ -1,14 +1,18 @@
 from __future__ import absolute_import, division, print_function, unicode_literals
+
 import glob
 import os
+
 import argparse
 import json
 import torch
 from scipy.io.wavfile import write
 from hifivoice.env import AttrDict
 from hifivoice.models import Generator
+
 h = None
 device = None
+
 
 def load_checkpoint(filepath, device):
     assert os.path.isfile(filepath)
@@ -16,6 +20,7 @@ def load_checkpoint(filepath, device):
     checkpoint_dict = torch.load(filepath, map_location=device)
     print("Complete.")
     return checkpoint_dict
+
 
 def scan_checkpoint(cp_dir, prefix):
     pattern = os.path.join(cp_dir, prefix + '*')
@@ -26,9 +31,8 @@ def scan_checkpoint(cp_dir, prefix):
 
 
 def inference(a,h):
-    checkpoint_file = r"hifivoice/pretrained/UNIVERSAL_V1/g_02500000"
     generator = Generator(h).to(device)
-    state_dict_g = load_checkpoint(checkpoint_file, device)
+    state_dict_g = load_checkpoint(a.checkpoint_file, device)
     generator.load_state_dict(state_dict_g['generator'])
     generator.eval()
     generator.remove_weight_norm()
@@ -43,6 +47,7 @@ def inference(a,h):
             write(output_file, h.sampling_rate, audio)
             print(output_file)
 
+
 def hifi_infer(input_mels_list,output_dir):
     print('Initializing Inference Process..')
     parser = argparse.ArgumentParser()
@@ -52,14 +57,13 @@ def hifi_infer(input_mels_list,output_dir):
     a = parser.parse_args()
     a.input_mels_list = input_mels_list
     a.output_dir = output_dir
+
     config_file = os.path.join(os.path.split(a.checkpoint_file)[0], 'config.json')
     with open(config_file) as f:
         data = f.read()
-
     global h
     json_config = json.loads(data)
     h = AttrDict(json_config)
-
     torch.manual_seed(h.seed)
     global device
     if torch.cuda.is_available():
@@ -67,6 +71,7 @@ def hifi_infer(input_mels_list,output_dir):
         device = torch.device('cuda')
     else:
         device = torch.device('cpu')
+
     inference(a,h)
 
 

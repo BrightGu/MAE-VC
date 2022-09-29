@@ -1,25 +1,24 @@
 import os
-os.environ['CUDA_VISIBLE_DEVICES'] = '3'
+os.environ['CUDA_VISIBLE_DEVICES'] = '0'
 import torch
 from torch.backends import cudnn
 import numpy as np
 import yaml
 from torch.utils.data import DataLoader
-from MaskVC.modules.Base.base_4c_16b_36_FSC_50 import MagicModel
+from MaskVC.modules.Base.base_6c_16b_36_FSC_50 import MagicModel
 from MaskVC  import util
 from MaskVC.infer.meldataset_infer import Test_MelDataset,mel_denormalize
 from hifivoice.inference_e2e import  hifi_infer
 
 class Solver():
-	def __init__(self, config):
+	def __init__(self, config,resume_path):
 		super(Solver, self).__init__()
 		self.config = config
 		self.local_rank = self.config['local_rank']
 		self.device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 		self.Generator = MagicModel().to(self.device)
 		self.init_epoch = 0
-		if self.config['resume']:
-			self.resume_model(self.config['resume_path'])
+		self.resume_model(resume_path)
 		print('config = %s', self.config)
 		print('param Generator size = %fM ' % (util.count_parameters_in_M(self.Generator)))
 
@@ -31,7 +30,7 @@ class Solver():
 							 self.config["fmax"], device=self.device)
 		test_data_loader = DataLoader(testset, num_workers=1, shuffle=False, sampler=None,
 									  batch_size=1, pin_memory=False, drop_last=True)
-		self.voice_dir = os.path.join(out_dir, "voice")
+		self.voice_dir = out_dir
 		os.makedirs(self.voice_dir, exist_ok=True)
 		return test_data_loader
 
@@ -60,7 +59,6 @@ class Solver():
 				file_name = convert_label[0]
 				mel_npy_file_list.append([file_name,fake_mel])
 		hifi_infer(mel_npy_file_list,self.voice_dir)
-		self.Generator.train()
 
 
 def setup_seed(seed):
@@ -72,14 +70,14 @@ def setup_seed(seed):
 if __name__ == '__main__':
 	print("【Solver MaskVC】")
 	cudnn.benchmark = True
-	config_path = r"/home/gyw/workspace/VC_GAN/MaskVC/MaskVC/infer/infer_config.yaml"
+	config_path = r"MaskVC/hifi_config.yaml"
 	with open(config_path) as f:
 		config = yaml.load(f, Loader=yaml.Loader)
+	resume_path = "MaskVC/pretrained/base_6c_16b_36_FSC_50.pt"
+	solver = Solver(config,resume_path)
 
-	solver = Solver(config)
-
-	src_file = "src.wav"
-	tar_file = "tar.wav"
+	src_file = r"p364_237.wav"
+	tar_file = r"p241_352.wav"
 	out_dir = ""
 	os.makedirs(out_dir, exist_ok=True)
 	solver.infer(src_file,tar_file,out_dir)

@@ -102,7 +102,7 @@ def get_hifi_mels(train_wav_dir,out_dir,config):
 if __name__ == '__main__':
     out_dir = r""
     # require 22050Hz
-    train_wav_dir = r"/VCTK-Corpus/wav22050/"
+    train_wav_dir = r"VCTK-Corpus/wav22050/"
     config_path = r"MaskVC/hifi_config.yaml"
     with open(config_path) as f:
         config = yaml.load(f, Loader=yaml.Loader)

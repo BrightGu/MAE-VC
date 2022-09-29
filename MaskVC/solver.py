@@ -5,11 +5,11 @@ from torch.backends import cudnn
 import numpy as np
 import yaml
 from torch.utils.data import DataLoader
-from MaskVC.data.ge2e_dataset import GE2EDataset,get_data_loaders
+from MaskVC.data.ge2e_dataset import get_data_loaders
 from MaskVC import util
 from MaskVC.meldataset_e2e2 import Test_MelDataset, get_test_dataset_filelist,mel_denormalize
 from hifivoice.inference_e2e import  hifi_infer
-from MaskVC.modules.Base.base_6c_16b_36_FSC_50  import MagicModel
+from MaskVC.modules.Base.base_6c_16b_36_FSC_50 import MagicModel
 # used for print log
 label_watch = "Base.base_6c_16b_36_FSC_50"
 
@@ -99,7 +99,7 @@ class Solver():
 			batch = next(self.train_data_loader)
 			feats = batch[0].to(self.device)
 			spk_feats = batch[1].to(self.device)
-			out = self.Generator(feats, spk_feats)
+			out = self.Generator.infer(feats, spk_feats)
 			loss = self.criterion(out,spk_feats)
 			self.reset_grad()
 			loss.backward()

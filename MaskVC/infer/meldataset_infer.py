@@ -153,11 +153,11 @@ class Test_MelDataset(torch.utils.data.Dataset):
 
     def __getitem__(self, index):
         # src_filename, tar_filename = self.audio_files[index]
-        src_filename, tar_filename,label = self.audio_files[index]
+        src_filename, tar_filename = self.audio_files[index]
         src_file_label = os.path.basename(src_filename).split(".")[0]
         tar_file_label = os.path.basename(tar_filename).split(".")[0]
 
-        convert_label = label+"_"+src_file_label + 'TO' + tar_file_label
+        convert_label = src_file_label + 'TO' + tar_file_label
         ####### len
         src_audio, src_sampling_rate = load_wav(src_filename)
         ### split
@@ -179,9 +179,7 @@ class Test_MelDataset(torch.utils.data.Dataset):
         clip_mel = clip_mel.squeeze(0).transpose(0, 1)
 
         clip_mel = mel_normalize(clip_mel)
-        # clip_mel = pad_mul_segment(clip_mel,128)
         return fake_mel, clip_mel, convert_label
-
 
     def __len__(self):
         return len(self.audio_files)
