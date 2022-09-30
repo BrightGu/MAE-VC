@@ -1,13 +1,11 @@
 # MAE-VC
 Voice Conversion Based on Learnable Similarity-Guided Masked Autoencoder
-
+For the audio samples, please refer to our [demo page](https://brightgu.github.io/MAE-VC/). The more converted speeches can be found in "Demo/ConvertedSpeeches/".
 ### Envs
 You can install the dependencies with
 ```bash
 pip install -r requirements.txt
 ```
-
-
 
 ### Infer
 Please refer to "MaskVC/infer/infer.py", and edit "input file path" and "output dir".
