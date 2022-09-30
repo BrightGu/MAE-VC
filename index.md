@@ -1,5 +1,5 @@
 ### MAE-VC: Voice Conversion Based on Learnable Similarity-Guided Masked Autoencoder
-<!-- #### [MediumVC: Any-to-any voice conversion using synthetic specific-speaker speeches as intermedium features](https://arxiv.org/abs/2110.02500) -->
+### Compared with other methods
 #### VCTK
 1. F2F, Our dispute is with the company, not the travelling public.
 2. F2M, I feel we might now have the foundations to go forward.
@@ -220,6 +220,69 @@
       <td><audio id="audio" controls="" preload="none"> <source id="V1_C" src="samples/Aishell/M2M/C_MediumVC_SSB02410476TOSSB18630063.wav"> </audio></td>
       <td><audio id="audio" controls="" preload="none"> <source id="V1_D" src="samples/Aishell/M2M/D_FragmentVC_SSB02410476TOSSB18630063.wav"> </audio></td>
       <td><audio id="audio" controls="" preload="none"> <source id="V1_E" src="samples/Aishell/M2M/E_MAEVC_SSB02410476TOSSB18630063.wav"> </audio></td>
+   </tr>
+   
+</table>
+
+
+### Evaluation on mask ratio and FSC
+#### VCTK
+1. F2F, Our dispute is with the company, not the travelling public.
+2. F2M, I feel we might now have the foundations to go forward.
+3. M2F, She can scoop these things into three red bags, and we will go meet her Wednesday at the train station. 
+4. M2M, The actual primary rainbow observed is said to be the effect of super-imposition of a number of bows. 
+
+<table>
+   <tr>
+      <td>Source</td>
+      <td>Target</td>
+      <td>Base_4c_16b_0r</td>
+      <td>Base_4c_16b_50r</td>
+      <td>Base_4c_16b_90r</td>
+      <td>Base_4c_16b_0r_FSC</td>
+      <td>Base_4c_16b_50r_FSC</td>
+      <td>Base_4c_16b_90r_FSC</td>
+   </tr>
+   <tr>
+      <td><audio id="audio" controls="" preload="none"> <source id="V1_s" src="samples/FSC/F2F/1/p303_045.wav"> </audio></td>
+      <td><audio id="audio" controls="" preload="none"> <source id="V1_t" src="samples/FSC/F2F/1/p280_315.wav"> </audio></td>
+      <td><audio id="audio" controls="" preload="none"> <source id="V1_A" src="samples/FSC/F2F/1/0r_no_p303_045TOp280_315.wav"> </audio></td>
+      <td><audio id="audio" controls="" preload="none"> <source id="V1_B" src="samples/FSC/F2F/1/50r_no_p303_045TOp280_315.wav"> </audio></td>
+      <td><audio id="audio" controls="" preload="none"> <source id="V1_C" src="samples/FSC/F2F/1/90r_no_p303_045TOp280_315.wav"> </audio></td>
+      <td><audio id="audio" controls="" preload="none"> <source id="V1_D" src="samples/FSC/F2F/1/0r_p303_045TOp280_315.wav"> </audio></td>
+      <td><audio id="audio" controls="" preload="none"> <source id="V1_E" src="samples/FSC/F2F/1/50r_p303_045TOp280_315.wav"> </audio></td>
+      <td><audio id="audio" controls="" preload="none"> <source id="V1_F" src="samples/FSC/F2F/1/90r_p303_045TOp280_315.wav"> </audio></td>
+     
+   </tr>
+   <tr>
+      <td><audio id="audio" controls="" preload="none"> <source id="V1_s" src="samples/FSC/F2M/1/p303_045.wav"> </audio></td>
+      <td><audio id="audio" controls="" preload="none"> <source id="V1_t" src="samples/FSC/F2M/1/p280_315.wav"> </audio></td>
+      <td><audio id="audio" controls="" preload="none"> <source id="V1_A" src="samples/FSC/F2M/1/0r_no_p303_045TOp280_315.wav"> </audio></td>
+      <td><audio id="audio" controls="" preload="none"> <source id="V1_B" src="samples/FSC/F2M/1/50r_no_p303_045TOp280_315.wav"> </audio></td>
+      <td><audio id="audio" controls="" preload="none"> <source id="V1_C" src="samples/FSC/F2M/1/90r_no_p303_045TOp280_315.wav"> </audio></td>
+      <td><audio id="audio" controls="" preload="none"> <source id="V1_D" src="samples/FSC/F2M/1/0r_p303_045TOp280_315.wav"> </audio></td>
+      <td><audio id="audio" controls="" preload="none"> <source id="V1_E" src="samples/FSC/F2M/1/50r_p303_045TOp280_315.wav"> </audio></td>
+      <td><audio id="audio" controls="" preload="none"> <source id="V1_F" src="samples/FSC/F2M/1/90r_p303_045TOp280_315.wav"> </audio></td>
+   </tr>
+   <tr>
+      <td><audio id="audio" controls="" preload="none"> <source id="V1_s" src="samples/FSC/M2F/1/p303_045.wav"> </audio></td>
+      <td><audio id="audio" controls="" preload="none"> <source id="V1_t" src="samples/FSC/M2F/1/p280_315.wav"> </audio></td>
+      <td><audio id="audio" controls="" preload="none"> <source id="V1_A" src="samples/FSC/M2F/1/0r_no_p303_045TOp280_315.wav"> </audio></td>
+      <td><audio id="audio" controls="" preload="none"> <source id="V1_B" src="samples/FSC/M2F/1/50r_no_p303_045TOp280_315.wav"> </audio></td>
+      <td><audio id="audio" controls="" preload="none"> <source id="V1_C" src="samples/FSC/M2F/1/90r_no_p303_045TOp280_315.wav"> </audio></td>
+      <td><audio id="audio" controls="" preload="none"> <source id="V1_D" src="samples/FSC/M2F/1/0r_p303_045TOp280_315.wav"> </audio></td>
+      <td><audio id="audio" controls="" preload="none"> <source id="V1_E" src="samples/FSC/M2F/1/50r_p303_045TOp280_315.wav"> </audio></td>
+      <td><audio id="audio" controls="" preload="none"> <source id="V1_F" src="samples/FSC/M2F/1/90r_p303_045TOp280_315.wav"> </audio></td>
+   </tr>
+   <tr>
+      <td><audio id="audio" controls="" preload="none"> <source id="V1_s" src="samples/FSC/M2M/1/p303_045.wav"> </audio></td>
+      <td><audio id="audio" controls="" preload="none"> <source id="V1_t" src="samples/FSC/M2M/1/p280_315.wav"> </audio></td>
+      <td><audio id="audio" controls="" preload="none"> <source id="V1_A" src="samples/FSC/M2M/1/0r_no_p303_045TOp280_315.wav"> </audio></td>
+      <td><audio id="audio" controls="" preload="none"> <source id="V1_B" src="samples/FSC/M2M/1/50r_no_p303_045TOp280_315.wav"> </audio></td>
+      <td><audio id="audio" controls="" preload="none"> <source id="V1_C" src="samples/FSC/M2M/1/90r_no_p303_045TOp280_315.wav"> </audio></td>
+      <td><audio id="audio" controls="" preload="none"> <source id="V1_D" src="samples/FSC/M2M/1/0r_p303_045TOp280_315.wav"> </audio></td>
+      <td><audio id="audio" controls="" preload="none"> <source id="V1_E" src="samples/FSC/M2M/1/50r_p303_045TOp280_315.wav"> </audio></td>
+      <td><audio id="audio" controls="" preload="none"> <source id="V1_F" src="samples/FSC/M2M/1/90r_p303_045TOp280_315.wav"> </audio></td>
    </tr>
    
 </table>
