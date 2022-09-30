@@ -21,11 +21,11 @@ solver.infer(src_file,tar_file,out_dir)
 Please refer to "MaskVC/predata/robust_mels.py"
 ```bash
 train_wav_dir = r"VCTK-Corpus/wav22050/"
-    config_path = r"MaskVC/hifi_config.yaml"
-    out_dir = r""
-    with open(config_path) as f:
-        config = yaml.load(f, Loader=yaml.Loader)
-    get_hifi_mels(train_wav_dir,out_dir,config)
+config_path = r"MaskVC/hifi_config.yaml"
+out_dir = r""
+with open(config_path) as f:
+    config = yaml.load(f, Loader=yaml.Loader)
+get_hifi_mels(train_wav_dir,out_dir,config)
 ```
 #### Training
 Please config file "MaskVC/hifi_config.yaml".
