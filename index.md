@@ -255,34 +255,148 @@
      
    </tr>
    <tr>
-      <td><audio id="audio" controls="" preload="none"> <source id="V1_s" src="samples/FSC/F2M/1/p303_045.wav"> </audio></td>
-      <td><audio id="audio" controls="" preload="none"> <source id="V1_t" src="samples/FSC/F2M/1/p280_315.wav"> </audio></td>
-      <td><audio id="audio" controls="" preload="none"> <source id="V1_A" src="samples/FSC/F2M/1/0r_no_p303_045TOp280_315.wav"> </audio></td>
-      <td><audio id="audio" controls="" preload="none"> <source id="V1_B" src="samples/FSC/F2M/1/50r_no_p303_045TOp280_315.wav"> </audio></td>
-      <td><audio id="audio" controls="" preload="none"> <source id="V1_C" src="samples/FSC/F2M/1/90r_no_p303_045TOp280_315.wav"> </audio></td>
-      <td><audio id="audio" controls="" preload="none"> <source id="V1_D" src="samples/FSC/F2M/1/0r_p303_045TOp280_315.wav"> </audio></td>
-      <td><audio id="audio" controls="" preload="none"> <source id="V1_E" src="samples/FSC/F2M/1/50r_p303_045TOp280_315.wav"> </audio></td>
-      <td><audio id="audio" controls="" preload="none"> <source id="V1_F" src="samples/FSC/F2M/1/90r_p303_045TOp280_315.wav"> </audio></td>
+      <td><audio id="audio" controls="" preload="none"> <source id="V1_s" src="samples/FSC/F2M/1/p239_057.wav"> </audio></td>
+      <td><audio id="audio" controls="" preload="none"> <source id="V1_t" src="samples/FSC/F2M/1/p252_365.wav"> </audio></td>
+      <td><audio id="audio" controls="" preload="none"> <source id="V1_A" src="samples/FSC/F2M/1/0r_no_p239_057TOp252_365.wav"> </audio></td>
+      <td><audio id="audio" controls="" preload="none"> <source id="V1_B" src="samples/FSC/F2M/1/50r_no_p239_057TOp252_365.wav"> </audio></td>
+      <td><audio id="audio" controls="" preload="none"> <source id="V1_C" src="samples/FSC/F2M/1/90r_no_p239_057TOp252_365.wav"> </audio></td>
+      <td><audio id="audio" controls="" preload="none"> <source id="V1_D" src="samples/FSC/F2M/1/0r_p239_057TOp252_365.wav"> </audio></td>
+      <td><audio id="audio" controls="" preload="none"> <source id="V1_E" src="samples/FSC/F2M/1/50r_p239_057TOp252_365.wav"> </audio></td>
+      <td><audio id="audio" controls="" preload="none"> <source id="V1_F" src="samples/FSC/F2M/1/90r_p239_057TOp252_365.wav"> </audio></td>
    </tr>
    <tr>
-      <td><audio id="audio" controls="" preload="none"> <source id="V1_s" src="samples/FSC/M2F/1/p303_045.wav"> </audio></td>
-      <td><audio id="audio" controls="" preload="none"> <source id="V1_t" src="samples/FSC/M2F/1/p280_315.wav"> </audio></td>
-      <td><audio id="audio" controls="" preload="none"> <source id="V1_A" src="samples/FSC/M2F/1/0r_no_p303_045TOp280_315.wav"> </audio></td>
-      <td><audio id="audio" controls="" preload="none"> <source id="V1_B" src="samples/FSC/M2F/1/50r_no_p303_045TOp280_315.wav"> </audio></td>
-      <td><audio id="audio" controls="" preload="none"> <source id="V1_C" src="samples/FSC/M2F/1/90r_no_p303_045TOp280_315.wav"> </audio></td>
-      <td><audio id="audio" controls="" preload="none"> <source id="V1_D" src="samples/FSC/M2F/1/0r_p303_045TOp280_315.wav"> </audio></td>
-      <td><audio id="audio" controls="" preload="none"> <source id="V1_E" src="samples/FSC/M2F/1/50r_p303_045TOp280_315.wav"> </audio></td>
-      <td><audio id="audio" controls="" preload="none"> <source id="V1_F" src="samples/FSC/M2F/1/90r_p303_045TOp280_315.wav"> </audio></td>
+      <td><audio id="audio" controls="" preload="none"> <source id="V1_s" src="samples/FSC/M2F/1/p232_005.wav"> </audio></td>
+      <td><audio id="audio" controls="" preload="none"> <source id="V1_t" src="samples/FSC/M2F/1/p308_329.wav"> </audio></td>
+      <td><audio id="audio" controls="" preload="none"> <source id="V1_A" src="samples/FSC/M2F/1/0r_no_p232_005TOp308_329.wav"> </audio></td>
+      <td><audio id="audio" controls="" preload="none"> <source id="V1_B" src="samples/FSC/M2F/1/50r_no_p232_005TOp308_329.wav"> </audio></td>
+      <td><audio id="audio" controls="" preload="none"> <source id="V1_C" src="samples/FSC/M2F/1/90r_no_p232_005TOp308_329.wav"> </audio></td>
+      <td><audio id="audio" controls="" preload="none"> <source id="V1_D" src="samples/FSC/M2F/1/0r_p232_005TOp308_329.wav"> </audio></td>
+      <td><audio id="audio" controls="" preload="none"> <source id="V1_E" src="samples/FSC/M2F/1/50r_p232_005TOp308_329.wav"> </audio></td>
+      <td><audio id="audio" controls="" preload="none"> <source id="V1_F" src="samples/FSC/M2F/1/90r_p232_005TOp308_329.wav"> </audio></td>
    </tr>
    <tr>
-      <td><audio id="audio" controls="" preload="none"> <source id="V1_s" src="samples/FSC/M2M/1/p303_045.wav"> </audio></td>
-      <td><audio id="audio" controls="" preload="none"> <source id="V1_t" src="samples/FSC/M2M/1/p280_315.wav"> </audio></td>
-      <td><audio id="audio" controls="" preload="none"> <source id="V1_A" src="samples/FSC/M2M/1/0r_no_p303_045TOp280_315.wav"> </audio></td>
-      <td><audio id="audio" controls="" preload="none"> <source id="V1_B" src="samples/FSC/M2M/1/50r_no_p303_045TOp280_315.wav"> </audio></td>
-      <td><audio id="audio" controls="" preload="none"> <source id="V1_C" src="samples/FSC/M2M/1/90r_no_p303_045TOp280_315.wav"> </audio></td>
-      <td><audio id="audio" controls="" preload="none"> <source id="V1_D" src="samples/FSC/M2M/1/0r_p303_045TOp280_315.wav"> </audio></td>
-      <td><audio id="audio" controls="" preload="none"> <source id="V1_E" src="samples/FSC/M2M/1/50r_p303_045TOp280_315.wav"> </audio></td>
-      <td><audio id="audio" controls="" preload="none"> <source id="V1_F" src="samples/FSC/M2M/1/90r_p303_045TOp280_315.wav"> </audio></td>
+      <td><audio id="audio" controls="" preload="none"> <source id="V1_s" src="samples/FSC/M2M/1/p246_022.wav"> </audio></td>
+      <td><audio id="audio" controls="" preload="none"> <source id="V1_t" src="samples/FSC/M2M/1/p245_093.wav"> </audio></td>
+      <td><audio id="audio" controls="" preload="none"> <source id="V1_A" src="samples/FSC/M2M/1/0r_no_p246_022TOp245_093.wav"> </audio></td>
+      <td><audio id="audio" controls="" preload="none"> <source id="V1_B" src="samples/FSC/M2M/1/50r_no_p246_022TOp245_093.wav"> </audio></td>
+      <td><audio id="audio" controls="" preload="none"> <source id="V1_C" src="samples/FSC/M2M/1/90r_no_p246_022TOp245_093.wav"> </audio></td>
+      <td><audio id="audio" controls="" preload="none"> <source id="V1_D" src="samples/FSC/M2M/1/0r_p246_022TOp245_093.wav"> </audio></td>
+      <td><audio id="audio" controls="" preload="none"> <source id="V1_E" src="samples/FSC/M2M/1/50r_p246_022TOp245_093.wav"> </audio></td>
+      <td><audio id="audio" controls="" preload="none"> <source id="V1_F" src="samples/FSC/M2M/1/90r_p246_022TOp245_093.wav"> </audio></td>
+   </tr>
+   
+</table>
+
+
+### Evaluation on bottleneck
+#### VCTK
+1. F2F, Our dispute is with the company, not the travelling public.
+2. F2M, I feel we might now have the foundations to go forward.
+3. M2F, She can scoop these things into three red bags, and we will go meet her Wednesday at the train station. 
+4. M2M, The actual primary rainbow observed is said to be the effect of super-imposition of a number of bows. 
+
+<table>
+   <tr>
+      <td>Source</td>
+      <td>Target</td>
+      <td>Base_4c_2b_50r</td>
+      <td>Base_4c_4b_50r</td>
+      <td>Base_4c_8b_50r</td>
+      <td>Base_4c_16b_50r</td>
+      <td>Base_4c_36b_50r</td>
+   </tr>
+   <tr>
+      <td><audio id="audio" controls="" preload="none"> <source id="V1_s" src="samples/bot/F2F/1/p303_045.wav"> </audio></td>
+      <td><audio id="audio" controls="" preload="none"> <source id="V1_t" src="samples/bot/F2F/1/p280_315.wav"> </audio></td>
+      <td><audio id="audio" controls="" preload="none"> <source id="V1_A" src="samples/bot/F2F/1/2b_p303_045TOp280_315.wav"> </audio></td>
+      <td><audio id="audio" controls="" preload="none"> <source id="V1_B" src="samples/bot/F2F/1/4b_p303_045TOp280_315.wav"> </audio></td>
+      <td><audio id="audio" controls="" preload="none"> <source id="V1_C" src="samples/bot/F2F/1/8b_p303_045TOp280_315.wav"> </audio></td>
+      <td><audio id="audio" controls="" preload="none"> <source id="V1_D" src="samples/bot/F2F/1/16b_p303_045TOp280_315.wav"> </audio></td>
+      <td><audio id="audio" controls="" preload="none"> <source id="V1_E" src="samples/bot/F2F/1/36b_p303_045TOp280_315.wav"> </audio></td>
+   </tr>
+   <tr>
+      <td><audio id="audio" controls="" preload="none"> <source id="V1_s" src="samples/bot/F2M/1/p239_057.wav"> </audio></td>
+      <td><audio id="audio" controls="" preload="none"> <source id="V1_t" src="samples/bot/F2M/1/p252_365.wav"> </audio></td>
+      <td><audio id="audio" controls="" preload="none"> <source id="V1_A" src="samples/bot/F2M/1/2b_p239_057TOp252_365.wav"> </audio></td>
+      <td><audio id="audio" controls="" preload="none"> <source id="V1_B" src="samples/bot/F2M/1/4b_p239_057TOp252_365.wav"> </audio></td>
+      <td><audio id="audio" controls="" preload="none"> <source id="V1_C" src="samples/bot/F2M/1/8b_p239_057TOp252_365.wav"> </audio></td>
+      <td><audio id="audio" controls="" preload="none"> <source id="V1_D" src="samples/bot/F2M/1/16b_p239_057TOp252_365.wav"> </audio></td>
+      <td><audio id="audio" controls="" preload="none"> <source id="V1_E" src="samples/bot/F2M/1/36b_p239_057TOp252_365.wav"> </audio></td>
+   </tr>
+   <tr>
+      <td><audio id="audio" controls="" preload="none"> <source id="V1_s" src="samples/bot/M2F/1/p232_005.wav"> </audio></td>
+      <td><audio id="audio" controls="" preload="none"> <source id="V1_t" src="samples/bot/M2F/1/p308_329.wav"> </audio></td>
+      <td><audio id="audio" controls="" preload="none"> <source id="V1_A" src="samples/bot/M2F/1/2b_p232_005TOp308_329.wav"> </audio></td>
+      <td><audio id="audio" controls="" preload="none"> <source id="V1_B" src="samples/bot/M2F/1/4b_p232_005TOp308_329.wav"> </audio></td>
+      <td><audio id="audio" controls="" preload="none"> <source id="V1_C" src="samples/bot/M2F/1/8b_p232_005TOp308_329.wav"> </audio></td>
+      <td><audio id="audio" controls="" preload="none"> <source id="V1_D" src="samples/bot/M2F/1/16b_p232_005TOp308_329.wav"> </audio></td>
+      <td><audio id="audio" controls="" preload="none"> <source id="V1_E" src="samples/bot/M2F/1/36b_p232_005TOp308_329.wav"> </audio></td>
+   </tr>
+   <tr>
+      <td><audio id="audio" controls="" preload="none"> <source id="V1_s" src="samples/bot/M2M/1/p246_022.wav"> </audio></td>
+      <td><audio id="audio" controls="" preload="none"> <source id="V1_t" src="samples/bot/M2M/1/p245_093.wav"> </audio></td>
+      <td><audio id="audio" controls="" preload="none"> <source id="V1_A" src="samples/bot/M2M/1/2b_p246_022TOp245_093.wav"> </audio></td>
+      <td><audio id="audio" controls="" preload="none"> <source id="V1_B" src="samples/bot/M2M/1/4b_p246_022TOp245_093.wav"> </audio></td>
+      <td><audio id="audio" controls="" preload="none"> <source id="V1_C" src="samples/bot/M2M/1/8b_p246_022TOp245_093.wav"> </audio></td>
+      <td><audio id="audio" controls="" preload="none"> <source id="V1_D" src="samples/bot/M2M/1/16b_p246_022TOp245_093.wav"> </audio></td>
+      <td><audio id="audio" controls="" preload="none"> <source id="V1_E" src="samples/bot/M2M/1/36b_p246_022TOp245_093.wav"> </audio></td>
+   </tr>
+   
+</table>
+
+
+### Evaluation on cascaded number
+#### VCTK
+1. F2F, Our dispute is with the company, not the travelling public.
+2. F2M, I feel we might now have the foundations to go forward.
+3. M2F, She can scoop these things into three red bags, and we will go meet her Wednesday at the train station. 
+4. M2M, The actual primary rainbow observed is said to be the effect of super-imposition of a number of bows. 
+
+<table>
+   <tr>
+      <td>Source</td>
+      <td>Target</td>
+      <td>Base_1c_2b_50r</td>
+      <td>Base_2c_4b_50r</td>
+      <td>Base_4c_8b_50r</td>
+      <td>Base_6c_16b_50r</td>
+      <td>Base_8c_36b_50r</td>
+   </tr>
+   <tr>
+      <td><audio id="audio" controls="" preload="none"> <source id="V1_s" src="samples/cascaded/F2F/1/p303_045.wav"> </audio></td>
+      <td><audio id="audio" controls="" preload="none"> <source id="V1_t" src="samples/cascaded/F2F/1/p280_315.wav"> </audio></td>
+      <td><audio id="audio" controls="" preload="none"> <source id="V1_A" src="samples/cascaded/F2F/1/1c_p303_045TOp280_315.wav"> </audio></td>
+      <td><audio id="audio" controls="" preload="none"> <source id="V1_B" src="samples/cascaded/F2F/1/2c_p303_045TOp280_315.wav"> </audio></td>
+      <td><audio id="audio" controls="" preload="none"> <source id="V1_C" src="samples/cascaded/F2F/1/4c_p303_045TOp280_315.wav"> </audio></td>
+      <td><audio id="audio" controls="" preload="none"> <source id="V1_D" src="samples/cascaded/F2F/1/6c_p303_045TOp280_315.wav"> </audio></td>
+      <td><audio id="audio" controls="" preload="none"> <source id="V1_E" src="samples/cascaded/F2F/1/8c_p303_045TOp280_315.wav"> </audio></td>
+   </tr>
+   <tr>
+      <td><audio id="audio" controls="" preload="none"> <source id="V1_s" src="samples/cascaded/F2M/1/p239_057.wav"> </audio></td>
+      <td><audio id="audio" controls="" preload="none"> <source id="V1_t" src="samples/cascaded/F2M/1/p252_365.wav"> </audio></td>
+      <td><audio id="audio" controls="" preload="none"> <source id="V1_A" src="samples/cascaded/F2M/1/1c_p239_057TOp252_365.wav"> </audio></td>
+      <td><audio id="audio" controls="" preload="none"> <source id="V1_B" src="samples/cascaded/F2M/1/2c_p239_057TOp252_365.wav"> </audio></td>
+      <td><audio id="audio" controls="" preload="none"> <source id="V1_C" src="samples/cascaded/F2M/1/4c_p239_057TOp252_365.wav"> </audio></td>
+      <td><audio id="audio" controls="" preload="none"> <source id="V1_D" src="samples/cascaded/F2M/1/6c_p239_057TOp252_365.wav"> </audio></td>
+      <td><audio id="audio" controls="" preload="none"> <source id="V1_E" src="samples/cascaded/F2M/1/8c_p239_057TOp252_365.wav"> </audio></td>
+   </tr>
+   <tr>
+      <td><audio id="audio" controls="" preload="none"> <source id="V1_s" src="samples/cascaded/M2F/1/p232_005.wav"> </audio></td>
+      <td><audio id="audio" controls="" preload="none"> <source id="V1_t" src="samples/cascaded/M2F/1/p308_329.wav"> </audio></td>
+      <td><audio id="audio" controls="" preload="none"> <source id="V1_A" src="samples/cascaded/M2F/1/1c_p232_005TOp308_329.wav"> </audio></td>
+      <td><audio id="audio" controls="" preload="none"> <source id="V1_B" src="samples/cascaded/M2F/1/2c_p232_005TOp308_329.wav"> </audio></td>
+      <td><audio id="audio" controls="" preload="none"> <source id="V1_C" src="samples/cascaded/M2F/1/4c_p232_005TOp308_329.wav"> </audio></td>
+      <td><audio id="audio" controls="" preload="none"> <source id="V1_D" src="samples/cascaded/M2F/1/6c_p232_005TOp308_329.wav"> </audio></td>
+      <td><audio id="audio" controls="" preload="none"> <source id="V1_E" src="samples/cascaded/M2F/1/8c_p232_005TOp308_329.wav"> </audio></td>
+   </tr>
+   <tr>
+      <td><audio id="audio" controls="" preload="none"> <source id="V1_s" src="samples/cascaded/M2M/1/p246_022.wav"> </audio></td>
+      <td><audio id="audio" controls="" preload="none"> <source id="V1_t" src="samples/cascaded/M2M/1/p245_093.wav"> </audio></td>
+      <td><audio id="audio" controls="" preload="none"> <source id="V1_A" src="samples/cascaded/M2M/1/1c_p246_022TOp245_093.wav"> </audio></td>
+      <td><audio id="audio" controls="" preload="none"> <source id="V1_B" src="samples/cascaded/M2M/1/2c_p246_022TOp245_093.wav"> </audio></td>
+      <td><audio id="audio" controls="" preload="none"> <source id="V1_C" src="samples/cascaded/M2M/1/4c_p246_022TOp245_093.wav"> </audio></td>
+      <td><audio id="audio" controls="" preload="none"> <source id="V1_D" src="samples/cascaded/M2M/1/6c_p246_022TOp245_093.wav"> </audio></td>
+      <td><audio id="audio" controls="" preload="none"> <source id="V1_E" src="samples/cascaded/M2M/1/8c_p246_022TOp245_093.wav"> </audio></td>
    </tr>
    
 </table>
