@@ -57,10 +57,10 @@
 </table>
 
 #### VCC2020
-1. F2F, A voice on the beach under the cliff began to sing.
-2. F2M, The two started to walk back along the road toward town.
-3. M2F, This was impregnable, and admitted of neither objection nor restriction.
-4. M2M, From a cupboard he pulled out one of his old shirts, which he tore in pieces.
+1. F2F, Their solution requires development of the human  capacity for social interest.
+2. F2M, Income rose zero point four percent last month.
+3. M2F, There is a connection between all of this.
+4. M2M, The problems I mentioned are not insurmountable.
 
 <table>
    <tr>
