@@ -7,8 +7,6 @@ You can install the dependencies with
 pip install -r requirements.txt
 ```
 
-
-
 ### Infer
 Please refer to "MaskVC/infer/infer.py", and edit "input file path" and "output dir".
 ```bash
