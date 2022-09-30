@@ -1,4 +1,4 @@
-### MAE-VC: Voice Conversion Based on Learnable Similarity-Guided Masked Autoencoder
+### MAE-VC: Voice Conversion Using Learnable Similarity-Guided Masked Autoencoder
 ### Compared with other methods
 #### VCTK
 1. F2F, Our dispute is with the company, not the travelling public.
