@@ -1,5 +1,5 @@
 # MAE-VC
-Voice Conversion Using Learnable Similarity-Guided Masked Autoencoder
+Voice Conversion Using Learnable Similarity-Guided Masked Autoencoder.
 For the audio samples, please refer to our [demo page](https://brightgu.github.io/MAE-VC/). The more converted speeches can be found in "Demo/ConvertedSpeeches/".
 ### Envs
 You can install the dependencies with
